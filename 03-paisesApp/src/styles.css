@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+.small-flag {
+    width: 30px;
+}
+
+.flag {
+    width: 100%;
+}
+
+.scroll {
+    height: 60vh;
+    overflow-y: auto;
+    margin-top: 1em;
+}
