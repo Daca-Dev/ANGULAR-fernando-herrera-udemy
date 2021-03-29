@@ -1,0 +1,30 @@
+<div class="text-layout">
+  <h1>Decimal pipes y Porcentajes</h1>
+  <p>Pipes para mostrar numeros y porcentajes.</p>
+</div>
+
+<div class="p-grid">
+  <div class="p-col-4">
+    <p-card
+      header="ventas Netas"
+      subheader="del presente año">
+      <i class="pi pi-dollar"></i>
+      {{ ventasNetas | number: '1.2-2' }}
+    </p-card>
+  </div>
+  <div class="p-col-4">
+    <p-card
+      header="ventas Netas"
+      subheader="del presente año">
+      {{ ventasNetas + 20000 | currency }}
+    </p-card>
+  </div>
+  <div class="p-col-4">
+    <p-card
+      header="Ganacia porcentual"
+      subheader="del presente año">
+      {{ porcentaje | percent:'2.2-2' }}
+    </p-card>
+  </div>
+</div>
+
