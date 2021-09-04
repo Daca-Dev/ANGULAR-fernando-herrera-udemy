@@ -1,0 +1,13 @@
+<h1>Gráficas dobles</h1>
+<hr>
+<div class="row">
+    <div class="col-md-6" *ngFor="let dataset of data;">
+        <app-grafica-barra [barChartData]=dataset></app-grafica-barra>
+        <div class="row mt-2">
+            <div class="col d-flex justify-content-around">
+                <button class="btn btn-primary" (click)="randomize(dataset)">Update data</button>
+                <button class="btn btn-secondary" (click)="randomColor(dataset)">Change color</button>
+            </div>
+        </div>
+    </div>
+</div>
